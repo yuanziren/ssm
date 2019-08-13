@@ -1,0 +1,20 @@
+RestFul服务
+    RestFul风格
+        GET：从服务器查询
+        POST：在服务器中新建一个资源，调用insert操作
+        PUT：在服务器中更新资源，调用update操作
+        PATCH：在服务器端更新资源（客户端提供改变的属性）。(目前jdk7 未实现，tomcat7 不支持)。
+        DELETE：从服务器端删除资源，调用delete 语句。
+    SpringMvc Restful 风格url 配置实现
+        RestFul的url风格，省去了写问号，让请求路径和参数统一起来
+        在RequestMapping中传递参数要用/{参数}
+
+全局异常处理
+    1、通过xml配置，使用SimpleMappingExceptionResolver
+    2、通过自定义全局异常类实现接口HandlerExceptionResolver处理，使用Commpont注解被扫描到容器中去，推荐
+    3、使用注解@ExceptionHandler,添加在BaseController中，子类继承他即可，不太推荐
+未捕获异常处理
+
+
+
+
